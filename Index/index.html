@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<!--
+    for Jesus glory
+-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>Timer-Online</title>
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div id="title">
+                <h1>Timer Online</h1>
+            </div>
+            <div id="day-night-button">
+                <button id="DayNightButton" onclick="DayAndNightMode()"><i class="bi bi-brightness-alt-high"></i></button>
+            </div>
+        </header>
+        <main id="timer-zone">
+            <div id="viewer">
+                <span id="view">00:00:00</span>
+            </div>
+            <div id="time-for-select">
+                <input id="hours" type="number" min="0" max="72" placeholder="hours">
+                <input id="minutes" type="number" min="0" max="59" placeholder="minutes">
+            </div>
+            <div id="iteration-buttons">
+                <button id="startButton" onclick="pickDuration()">Start</button>
+                <button onclick="pauseTimer()">Pause</button>
+                <button onclick="stopTimer()">Stop</button>
+            </div>
+        </main>
+        <footer id="footer">
+            <div id="infos">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos distinctio illum quae, saepe commodi laudantium labore ducimus ipsum quibusdam architecto est, dicta cum aperiam doloremque dolorum alias id quaerat doloribus.</p>
+                <p id="copyrights"><i class="bi bi-c-circle"></i> Created by Isaque Da S. Miclos</p>
+            </div>
+        </footer>
+    </div>
+    <script src="../scripts/timer.js"></script>
+</body>
+
+</html>
