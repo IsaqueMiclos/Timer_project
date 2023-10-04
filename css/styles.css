@@ -19,7 +19,7 @@
 #header {
     margin: 0px 20px;
     padding: 20px;
-    background-color: #457de6;
+    background-color: #2499c7;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -33,15 +33,31 @@
     text-transform: uppercase;
 }
 
-#day-night-button button{
-    padding: 10px;
-    width: 70px;
-    height: 50px;
-    border: transparent;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 25px;
+#day-night-button{
+    text-align: center;
+    position: relative;
+    width: 120px;
+    height: 65px;
+}
+
+#description {
+    background-color: rgba(0, 0, 0, .3);
     color: white;
+    padding: 5px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#day-night-interation {
+    align-items: center;
+
+}
+
+#day-night-interation i {
+    color: white;
+    font-size: 20pt;
+    cursor: pointer;
 }
 
 /*body of the page*/
@@ -51,7 +67,7 @@ main#timer-zone {
     padding: 20px;
     width: 500px;
     position: relative;
-    background-color: #457de6;
+    background-color: #2499c7;
     border-radius: 30px;
 }
 
@@ -76,14 +92,14 @@ main#timer-zone {
     padding: 10px;
     margin: 0 5px;
     border: 1px solid white;
-    background-color: #457de6;
+    background-color: #2499c7;
     color: white;
     font-size: 14px;
     transition: .6s;
 }
 
 #time-for-select input:hover {
-    border-color: #192d52;
+    border-color: #006691;
 }
 
 #time-for-select input::placeholder {
@@ -100,7 +116,7 @@ main#timer-zone {
     color: white;
     border: none;
     border-bottom: 2px solid white;
-    background-color: #457de6;
+    background-color: #2499c7;
     margin: 0 5px;
     padding: 10px;
     font-size: 15px;
@@ -111,7 +127,7 @@ main#timer-zone {
 #iteration-buttons button:hover {
     color: #457de6;
     background-color: white;
-    border-bottom-color: #192d52;
+    border-bottom-color: #006691;
 }
 
 /*Footer*/
@@ -121,7 +137,7 @@ main#timer-zone {
     padding: 5px;
     position: relative;
     text-align: justify;
-    background-color: #457de6;
+    background-color: #2499c7;
 }
 
 #infos {

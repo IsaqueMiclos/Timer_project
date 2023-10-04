@@ -97,15 +97,25 @@ function pauseTimer() {
 }
 
 //Day and Night button
+let type = 0
 
 function DayAndNightMode() {
-    let btn = document.getElementById("DayNightButton")
+    let description = document.getElementById('description')
+    let button = document.querySelector("#day-night-interation")
 
-    if (btn.innerHTML == `<i class="bi bi-brightness-alt-high"></i>`) {
-        btn.innerHTML = `<i class="bi bi-moon"></i>`
+    if (type == 0) {
+        button.innerHTML = `<i class="bi bi-moon-fill"></i>`
+        description.textContent = 'Night mode on'
+        type = 1
+        
+        document.body.style.backgroundColor = '#363636'
     }
 
-    if (btn.innerHTML == `<i class="bi bi-moon"></i>`) {
-        btn.innerHTML = `<i class="bi bi-brightness-alt-high"></i>`
+    else if (type == 1) {
+        button.innerHTML = `<i class="bi bi-brightness-high-fill"></i>`
+        description.textContent = 'Day mode on'
+        type = 0
+
+        document.body.style.backgroundColor = '#fff'
     }
 }
